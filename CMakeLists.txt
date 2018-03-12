@@ -23,5 +23,4 @@ add_executable(testExe
 
 message(STATUS "Catch include dir: ${catch2_SOURCE_DIR}/include")
 
-target_link_libraries(testExe Catch) #case sensitive!
-
+target_link_libraries(testExe Catch2::Catch) # Prefer namespaced library
